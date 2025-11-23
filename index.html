@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <title>Q3 Financial Earnings Report</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/blood.css" id="theme">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/monokai.css">
 </head>
 <body>
@@ -18,13 +16,11 @@
         <section>
             <h1>Q3 Financial Report</h1>
             <h3>Quarterly Earnings Review</h3>
-            <p>
-                <small>Presented by: Technical Consultant<br>
-                <a href="mailto:23f2005664@ds.study.iitm.ac.in">23f2005664@ds.study.iitm.ac.in</a></small>
-            </p>
+            <p>Presented by Technical Consultant</p>
+            <p>Email: 23f2005664@ds.study.iitm.ac.in</p>
+            
             <aside class="notes">
-                Good morning stakeholders. Today we will review the Q3 performance. 
-                My contact details are on the screen for follow-up questions.
+                Good morning stakeholders.
             </aside>
         </section>
 
@@ -34,55 +30,39 @@
                 
                 * **Revenue:** Up by 15% YOY
                 * **EBITDA:** Stable at 22%
-                * **Market Share:** Increased in APAC region
+                
+                Verification Email: 23f2005664@ds.study.iitm.ac.in
                 
                 ---
                 
-                > "Our digital transformation strategy is finally yielding tangible returns."
+                > "Our digital transformation strategy is finally yielding returns."
             </textarea>
         </section>
 
         <section>
             <h2>Growth Drivers</h2>
-            <p>Our success this quarter was driven by three key factors:</p>
             <ul>
-                <li class="fragment fade-up">Algorithmic Trading Optimization</li>
-                <li class="fragment fade-up">Cloud Infrastructure Cost Reduction</li>
-                <li class="fragment fade-up">AI-Driven Customer Insights</li>
+                <li class="fragment fade-up">Algorithmic Trading</li>
+                <li class="fragment fade-up">Cloud Cost Reduction</li>
+                <li class="fragment fade-up">AI Insights</li>
             </ul>
-            <aside class="notes">
-                Click through to reveal each point. Note that Cloud costs specifically dropped by 8%.
-            </aside>
         </section>
 
         <section>
             <h2>Financial Modeling</h2>
-            <p>We utilized the Black-Scholes model for our derivatives pricing:</p>
-            
-            \[
-            C = S_0 N(d_1) - K e^{-rT} N(d_2)
-            \]
-
-            <p>Where volatility calculations are defined as:</p>
-            \[
-            d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2)T}{\sigma \sqrt{T}}
-            \]
+            \[ C = S_0 N(d_1) - K e^{-rT} N(d_2) \]
+            <p>where:</p>
+            \[ d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2)T}{\sigma \sqrt{T}} \]
         </section>
 
         <section>
             <h2>Algorithmic Strategy</h2>
-            <p>Python implementation for the moving average crossover:</p>
-            <pre><code class="python" data-line-numbers="1-2|5-6|8">
+            <pre><code class="python" data-line-numbers="1|3-4">
 import pandas as pd
-import numpy as np
 
+# Calculate Simple Moving Average
 def calculate_sma(data, window):
-    # Calculate Simple Moving Average
     return data['Close'].rolling(window=window).mean()
-
-# Execute strategy
-short_window = 40
-long_window = 100
             </code></pre>
         </section>
 
@@ -96,14 +76,10 @@ long_window = 100
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/math/math.js"></script>
 
 <script>
-    // Initialize Reveal with plugins
     Reveal.initialize({
         controls: true,
         progress: true,
-        center: true,
         hash: true,
-        
-        // Load the plugins
         plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
     });
 </script>
