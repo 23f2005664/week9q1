@@ -1,19 +1,31 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Quarterly Earnings Report</title>
   <meta name="description" content="Interactive Reveal.js presentation for quarterly earnings">
   <meta name="author" content="23f2005664@ds.study.iitm.ac.in">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css" integrity="sha512-6R9cV4Q6VZ+S6pKZf9V+M2c3tQxV4R+8KpZ6J+6V8Zf9c+6V9c+6V9c+6V9c+6V" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css" integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css"
+    integrity="sha512-6R9cV4Q6VZ+S6pKZf9V+M2c3tQxV4R+8KpZ6J+6V8Zf9c+6V9c+6V9c+6V9c+6V" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css"
+    integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     /* Custom styling for premium look */
-    body {font-family: 'Inter', sans-serif;}
-    .highlight {background: rgba(255,255,255,0.1); padding: .2em .4em; border-radius: .3em;}
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .highlight {
+      background: rgba(255, 255, 255, 0.1);
+      padding: .2em .4em;
+      border-radius: .3em;
+    }
   </style>
 </head>
+
 <body>
   <div class="reveal">
     <div class="slides">
@@ -96,14 +108,20 @@ print('NPV @ 8% =', npv(cash, 0.08))
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js" integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js" integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js" integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js" integrity="sha512-xxxx"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"
+    integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js"
+    integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js" integrity="sha512-xxxx"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     Reveal.initialize({
       hash: true,
-      plugins: [ RevealMarkdown, RevealHighlight ]
+      plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
     });
   </script>
 </body>
+
 </html>
