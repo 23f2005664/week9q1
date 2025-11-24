@@ -71,6 +71,169 @@ def hello_world():
 </script>
 </body>
 </html> -->
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quarterly Earnings Report | RevealJS</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css" id="theme">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
+
+    <style>
+      /* Custom Financial Theme Overrides */
+      .reveal { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .reveal h1, .reveal h2, .reveal h3 { color: #1a3c5e; text-transform: none; }
+      .reveal h1 { font-size: 2.5em; border-bottom: 3px solid #d4af37; padding-bottom: 20px; }
+      .reveal .footer {
+        position: absolute; bottom: 1em; left: 1em; font-size: 0.5em; color: #888;
+      }
+      .metric-box {
+        background: #f0f4f8; border-left: 5px solid #1a3c5e; padding: 20px; margin: 20px 0; text-align: left;
+      }
+      .highlight-text { color: #d4af37; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h3>Global Financial Corp</h3>
+          <h1>Q3 Earnings Report</h1>
+          <p>Technical & Fiscal Analysis</p>
+          <div style="font-size: 0.6em; margin-top: 50px; color: #555;">
+            <p>Prepared by: Technical Consultant</p>
+            <p>Email: <a href="mailto:23f2005664@ds.study.iitm.ac.in">23f2005664@ds.study.iitm.ac.in</a></p>
+          </div>
+          <aside class="notes">
+            Good morning stakeholders. Today we will review the Q3 technical and financial performance. My contact details are on the screen.
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Executive Summary
+            
+            Key takeaways from the third quarter:
+
+            - **Revenue Growth:** Exceeded targets by 15%.
+            - **Tech Infrastructure:** 99.99% uptime achieved.
+            - **Market Expansion:** Successfully launched in 2 new regions.
+            
+            > "Innovation is the specific instrument of entrepreneurship."
+          </textarea>
+        </section>
+
+        <section>
+          <h2>Revenue Breakdown</h2>
+          <p>Growth by sector (Year over Year):</p>
+          
+          <div style="display: flex; justify-content: space-around; margin-top: 40px;">
+            <div class="fragment fade-up metric-box">
+              <h3>Retail</h3>
+              <p class="highlight-text">+12%</p>
+            </div>
+            <div class="fragment fade-up metric-box">
+              <h3>Investment</h3>
+              <p class="highlight-text">+24%</p>
+            </div>
+            <div class="fragment fade-up metric-box">
+              <h3>FinTech</h3>
+              <p class="highlight-text">+45%</p>
+            </div>
+          </div>
+          
+          <p class="fragment fade-in" style="margin-top: 30px; font-style: italic;">
+            FinTech leads the charge in Q3.
+          </p>
+          
+          <aside class="notes">
+            Click next to reveal each sector. Notice the massive jump in our FinTech sector, which is the focus of this technical report.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Risk Modeling</h2>
+          <p>We utilized the Black-Scholes model for our derivatives pricing update:</p>
+          
+          <div style="padding: 20px; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            \[
+            C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)}
+            \]
+          </div>
+          
+          <p style="font-size: 0.7em; margin-top: 20px;">
+            Where:
+            \[
+            d_1 = \frac{\ln(S/K) + (r + \frac{\sigma^2}{2})(T-t)}{\sigma\sqrt{T-t}}
+            \]
+          </p>
+
+          <aside class="notes">
+            We've mathematically optimized our risk assessment using standard financial modeling formulas shown here.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Automated Reporting</h2>
+          <p>We implemented a new Python pipeline for real-time analytics:</p>
+          
+          <pre><code class="python" data-trim data-line-numbers="1-2|5-7|9">
+import pandas as pd
+import numpy as np
+
+def calculate_portfolio_variance(weights, cov_matrix):
+    # Calculate portfolio variance
+    variance = np.dot(weights.T, np.dot(cov_matrix, weights))
+    return variance
+
+# Execute Q3 Analysis
+q3_risk = calculate_portfolio_variance(current_weights, market_cov)
+print(f"Q3 Portfolio Risk: {q3_risk:.4f}")
+          </code></pre>
+          
+          <aside class="notes">
+            Here is the snippet of the core calculation engine. Line 5 is where the linear algebra occurs for variance calculation.
+          </aside>
+        </section>
+        <section>
+          <h2>Strategic Outlook</h2>
+          <ul>
+            <li>Maintain momentum in FinTech sector.</li>
+            <li>Deploy new risk algorithms globally.</li>
+            <li>Review Q4 projections.</li>
+          </ul>
+          <h3 style="margin-top: 50px; color: #d4af37;">Thank You</h3>
+          <p style="font-size: 0.6em;">23f2005664@ds.study.iitm.ac.in</p>
+        </section>
+
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+
+    <script>
+      // Initialize RevealJS
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        
+        // Plugins
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+      });
+    </script>
+  </body>
+</html> -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -128,6 +291,12 @@ def hello_world():
             - **Tech Infrastructure:** 99.99% uptime achieved.
             - **Market Expansion:** Successfully launched in 2 new regions.
             
+            ```python
+            # Annual Projection Update
+            def project_growth(current_rate):
+                return current_rate * 1.15
+            ```
+
             > "Innovation is the specific instrument of entrepreneurship."
           </textarea>
         </section>
