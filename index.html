@@ -1,189 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Quarterly Earnings Report | RevealJS</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4 2024 Earnings Report - Interactive Presentation</title>
     
-    <!-- RevealJS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css" id="theme">
+    <!-- RevealJS Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" />
     
-    <!-- Code Syntax Highlighting Theme -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
-
+    <!-- Custom Styling -->
     <style>
-      /* Custom Financial Theme Overrides */
-      .reveal { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-      .reveal h1, .reveal h2, .reveal h3 { color: #1a3c5e; text-transform: none; }
-      .reveal h1 { font-size: 2.5em; border-bottom: 3px solid #d4af37; padding-bottom: 20px; }
-      .reveal .footer {
-        position: absolute; bottom: 1em; left: 1em; font-size: 0.5em; color: #888;
-      }
-      .metric-box {
-        background: #f0f4f8; border-left: 5px solid #1a3c5e; padding: 20px; margin: 20px 0; text-align: left;
-      }
-      .highlight-text { color: #d4af37; font-weight: bold; }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+        }
+        
+        .reveal pre {
+            width: 100%;
+            font-size: 0.55em;
+            background: #3f3f3f;
+            color: #dcdcdc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .reveal code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #333;
+        }
+        
+        .reveal pre code {
+            background: transparent;
+            padding: 0;
+            color: #dcdcdc;
+        }
+        
+        .contact-info {
+            font-size: 0.8em;
+            margin-top: 40px;
+            padding: 20px;
+            background: #f5f5f5;
+            border-left: 4px solid #0066cc;
+            border-radius: 4px;
+        }
+        
+        .financial-metric {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background: #e8f4f8;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .math-section {
+            background: #f9f9f9;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="reveal">
-      <div class="slides">
-
-        <!-- SLIDE 1: Title & Personal Details -->
-        <section>
-          <h3>Global Financial Corp</h3>
-          <h1>Q3 Earnings Report</h1>
-          <p>Technical & Fiscal Analysis</p>
-          <div style="font-size: 0.6em; margin-top: 50px; color: #555;">
-            <p>Prepared by: Technical Consultant</p>
-            <p>Email: <a href="mailto:23f2005664@ds.study.iitm.ac.in">23f2005664@ds.study.iitm.ac.in</a></p>
-          </div>
-          <aside class="notes">
-            Good morning stakeholders. Today we will review the Q3 technical and financial performance. My contact details are on the screen.
-          </aside>
-        </section>
-
-        <!-- SLIDE 2: Markdown Content -->
-        <section data-markdown>
-          <textarea data-template>
-            ## Executive Summary
+        <div class="slides">
             
-            Key takeaways from the third quarter:
+            <!-- Slide 1: Title Slide -->
+            <section>
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Interactive Financial Analysis</h3>
+                <div class="contact-info">
+                    <p><strong>Presented by:</strong> 23f2005664@ds.study.iitm.ac.in</p>
+                    <p>Financial Analytics Division</p>
+                </div>
+                <aside class="notes">
+                    Welcome to our Q4 2024 Earnings Report presentation. This is an interactive presentation 
+                    showcasing our financial performance. The presenter email is 23f2005664@ds.study.iitm.ac.in. 
+                    Take a moment to review the key metrics on this slide before proceeding.
+                </aside>
+            </section>
 
-            - **Revenue Growth:** Exceeded targets by 15%.
-            - **Tech Infrastructure:** 99.99% uptime achieved.
-            - **Market Expansion:** Successfully launched in 2 new regions.
-            
-            > "Innovation is the specific instrument of entrepreneurship."
-          </textarea>
-        </section>
+            <!-- Slide 2: Markdown Slide (Required) -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key Financial Metrics
+                    
+                    - **Revenue**: $2.5B (↑15% YoY)
+                    - **Operating Margin**: 28% (↑2pp)
+                    - **EPS**: $3.45 (↑12% YoY)
+                    - **Free Cash Flow**: $800M (↑25% YoY)
+                    
+                    ---
+                    
+                    ## Strategic Initiatives
+                    
+                    - Digital Transformation
+                    - Market Expansion
+                    - Customer Retention
+                </textarea>
+            </section>
 
-        <!-- SLIDE 3: Fragments & Animations -->
-        <section>
-          <h2>Revenue Breakdown</h2>
-          <p>Growth by sector (Year over Year):</p>
-          
-          <div style="display: flex; justify-content: space-around; margin-top: 40px;">
-            <div class="fragment fade-up metric-box">
-              <h3>Retail</h3>
-              <p class="highlight-text">+12%</p>
-            </div>
-            <div class="fragment fade-up metric-box">
-              <h3>Investment</h3>
-              <p class="highlight-text">+24%</p>
-            </div>
-            <div class="fragment fade-up metric-box">
-              <h3>FinTech</h3>
-              <p class="highlight-text">+45%</p>
-            </div>
-          </div>
-          
-          <p class="fragment fade-in" style="margin-top: 30px; font-style: italic;">
-            FinTech leads the charge in Q3.
-          </p>
-          
-          <aside class="notes">
-            Click next to reveal each sector. Notice the massive jump in our FinTech sector, which is the focus of this technical report.
-          </aside>
-        </section>
+            <!-- Slide 3: Revenue Breakdown with Fragments -->
+            <section>
+                <h2>Revenue Breakdown</h2>
+                <ul>
+                    <li class="fragment">Core Business: $1.8B</li>
+                    <li class="fragment fade-up">Premium Services: $450M</li>
+                    <li class="fragment fade-up">International Markets: $250M</li>
+                </ul>
+                <p class="fragment" style="margin-top: 40px; color: #0066cc; font-weight: bold;">
+                    Total: $2.5B (+15% YoY)
+                </p>
+                <aside class="notes">
+                    The revenue breakdown shows strong performance across all segments. 
+                    Notice the particularly strong growth in International Markets at 35% YoY.
+                    Premium services showing healthy margin expansion.
+                </aside>
+            </section>
 
-        <!-- SLIDE 4: Mathematical Equations -->
-        <section>
-          <h2>Risk Modeling</h2>
-          <p>We utilized the Black-Scholes model for our derivatives pricing update:</p>
-          
-          <div style="padding: 20px; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-            \[
-            C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)}
-            \]
-          </div>
-          
-          <p style="font-size: 0.7em; margin-top: 20px;">
-            Where:
-            \[
-            d_1 = \frac{\ln(S/K) + (r + \frac{\sigma^2}{2})(T-t)}{\sigma\sqrt{T-t}}
-            \]
-          </p>
-
-          <aside class="notes">
-            We've mathematically optimized our risk assessment using standard financial modeling formulas shown here.
-          </aside>
-        </section>
-
-        <!-- SLIDE 5: Code Block with Syntax Highlighting (PYTHON) -->
-        <section>
-          <h2>Automated Reporting</h2>
-          <p>We implemented a new Python pipeline for real-time analytics:</p>
-          
-          <!-- FIXED: Used 'language-python' class explicitly for stricter graders -->
-          <pre><code class="language-python" data-trim data-line-numbers="1-2|5-7|9">
-import pandas as pd
+            <!-- Slide 4: Financial Analysis Code -->
+            <section>
+                <h2>Financial Analysis Code</h2>
+                <pre><code class="python">import pandas as pd
 import numpy as np
 
-def calculate_portfolio_variance(weights, cov_matrix):
-    # Calculate portfolio variance
-    variance = np.dot(weights.T, np.dot(cov_matrix, weights))
-    return variance
+# Q4 2024 Financial Data
+quarters = ['Q1', 'Q2', 'Q3', 'Q4']
+revenue = [2.0, 2.15, 2.35, 2.5]
+earnings = [2.8, 2.95, 3.15, 3.45]
 
-# Execute Q3 Analysis
-q3_risk = calculate_portfolio_variance(current_weights, market_cov)
-print(f"Q3 Portfolio Risk: {q3_risk:.4f}")
-          </code></pre>
-          
-          <aside class="notes">
-            Here is the snippet of the core calculation engine. Line 5 is where the linear algebra occurs for variance calculation.
-          </aside>
-        </section>
+# Calculate growth rates
+revenue_growth = np.diff(revenue) / revenue[:-1] * 100
+eps_growth = np.diff(earnings) / earnings[:-1] * 100
 
-        <!-- SLIDE 6: Extra Code Block (JSON) -->
-        <section>
-            <h2>System Config</h2>
-            <p>Configuration parameters loaded during runtime:</p>
-            <!-- Added a second block with 'language-json' to ensure passing -->
-            <pre><code class="language-json">
-{
-  "environment": "production",
-  "version": "4.5.0",
-  "modules": ["finance", "risk", "compliance"],
-  "debug": false
-}
-            </code></pre>
-        </section>
+print(f"Average Revenue Growth: {np.mean(revenue_growth):.2f}%")
+print(f"Average EPS Growth: {np.mean(eps_growth):.2f}%")</code></pre>
+                <aside class="notes">
+                    This code demonstrates how we process quarterly financial data.
+                    The growth calculations show consistent quarter-over-quarter improvement.
+                    Notice the acceleration in both revenue and EPS growth.
+                </aside>
+            </section>
 
-        <!-- SLIDE 7: Conclusion -->
-        <section>
-          <h2>Strategic Outlook</h2>
-          <ul>
-            <li>Maintain momentum in FinTech sector.</li>
-            <li>Deploy new risk algorithms globally.</li>
-            <li>Review Q4 projections.</li>
-          </ul>
-          <h3 style="margin-top: 50px; color: #d4af37;">Thank You</h3>
-          <p style="font-size: 0.6em;">23f2005664@ds.study.iitm.ac.in</p>
-        </section>
+            <!-- Slide 5: Statistical Formula with Math -->
+            <section>
+                <h2>Return on Investment Calculation</h2>
+                <div class="math-section">
+                    <p>The Return on Investment (ROI) formula:</p>
+                    $$\text{ROI} = \frac{\text{Net Profit}}{\text{Cost of Investment}} \times 100%$$
+                </div>
+                <div class="math-section">
+                    <p>For Q4 2024:</p>
+                    $$\text{ROI} = \frac{\$450M}{\$1500M} \times 100% = 30%$$
+                </div>
+                <aside class="notes">
+                    The ROI formula is fundamental to our performance analysis.
+                    Our Q4 2024 ROI of 30% represents a 3 percentage point improvement 
+                    compared to Q3 2024, indicating enhanced operational efficiency.
+                </aside>
+            </section>
 
-      </div>
+            <!-- Slide 6: Advanced Financial Metrics -->
+            <section>
+                <h2>Advanced Financial Metrics</h2>
+                <div class="math-section" style="text-align: left;">
+                    <p><strong>Debt-to-Equity Ratio:</strong></p>
+                    $$D/E = \frac{\text{Total Debt}}{\text{Total Equity}} = \frac{\$800M}{\$2100M} = 0.38$$
+                </div>
+                <div class="math-section" style="text-align: left;">
+                    <p><strong>Profit Margin:</strong></p>
+                    $$\text{Profit Margin} = \frac{\text{Net Income}}{\text{Revenue}} = \frac{\$750M}{\$2500M} = 30%$$
+                </div>
+                <aside class="notes">
+                    These metrics demonstrate our strong financial health.
+                    The D/E ratio of 0.38 indicates conservative leverage.
+                    Our 30% profit margin is among the best in the industry.
+                </aside>
+            </section>
+
+            <!-- Slide 7: Performance Summary with Animations -->
+            <section>
+                <h2>Q4 2024 Performance Summary</h2>
+                <div style="margin-top: 40px;">
+                    <div class="financial-metric fragment">Revenue: $2.5B</div>
+                    <div class="financial-metric fragment">EPS: $3.45</div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <div class="financial-metric fragment">FCF: $800M</div>
+                    <div class="financial-metric fragment">ROI: 30%</div>
+                </div>
+                <aside class="notes">
+                    All key metrics show strong performance. 
+                    This represents solid execution across all business lines.
+                    The team has successfully delivered on strategic objectives.
+                </aside>
+            </section>
+
+            <!-- Slide 8: Data Processing Example -->
+            <section>
+                <h2>Data Processing Pipeline</h2>
+                <pre><code class="python">import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+# Load financial data
+df = pd.read_csv('quarterly_results.csv')
+
+# Data cleaning
+df.dropna(inplace=True)
+df['revenue_growth'] = df['revenue'].pct_change()
+
+# Feature scaling for analysis
+scaler = StandardScaler()
+df_scaled = scaler.fit_transform(df[['revenue', 'earnings']])
+
+# Generate insights
+summary = df.describe()
+print(summary)</code></pre>
+                <aside class="notes">
+                    This pipeline shows our data processing workflow.
+                    We ensure clean data before any analysis.
+                    Scaling helps with comparative metrics across quarters.
+                </aside>
+            </section>
+
+            <!-- Slide 9: Closing Slide -->
+            <section>
+                <h1>Thank You</h1>
+                <h3>Questions & Discussion</h3>
+                <div class="contact-info" style="margin-top: 60px;">
+                    <p><strong>Contact:</strong> 23f2005664@ds.study.iitm.ac.in</p>
+                    <p>Financial Analytics Division</p>
+                    <p style="margin-top: 20px; font-size: 0.9em;">
+                        This presentation was created with RevealJS
+                    </p>
+                </div>
+                <aside class="notes">
+                    Thank you for reviewing our Q4 2024 Earnings Report.
+                    We've demonstrated strong financial performance and are well-positioned 
+                    for continued growth in 2025. Please reach out with any questions.
+                </aside>
+            </section>
+
+        </div>
     </div>
 
-    <!-- RevealJS Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+    <!-- RevealJS Scripts and Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
     <script>
-      // Initialize RevealJS
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        center: true,
-        hash: true,
-        
-        // Plugins
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-      });
+        Reveal.initialize({
+            // Display settings
+            width: 1280,
+            height: 720,
+            margin: 0.04,
+            
+            // Navigation
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            history: true,
+            
+            // Transitions
+            transition: 'slide',
+            transitionSpeed: 'default',
+            
+            // Plugins
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealMath.KaTeX,
+                RevealNotes
+            ],
+            
+            // Math configuration
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+                config: 'TeX-AMS_HTML-full',
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            }
+        });
     </script>
-  </body>
+</body>
 </html>
